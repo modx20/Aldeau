@@ -1,0 +1,6 @@
+{
+  "name": "مطاحن ومحامص الضياء — نموذج أولي",
+  "description": "نموذج أولي مقترح لواجهة الموقع التعريفي للعلامة التجارية الأردنية مطاحن ومحامص الضياء منذ 1997.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
