@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { SITE_MEDIA } from '../assets/media';
 import { NAV_ITEMS, SITE_INFO } from '../data/aldiaaData';
 import { buildWhatsAppUrl } from '../utils/aldiaa';
 import {
@@ -15,7 +16,7 @@ export function BrandMark({ lazy = false }: { lazy?: boolean }) {
     <a href="#top" className="brand" aria-label={`${SITE_INFO.name} — العودة للأعلى`}>
       <img
         className="brand-logo"
-        src={SITE_INFO.assets.logo}
+        src={SITE_MEDIA.logo}
         alt="شعار مطاحن ومحامص الضياء"
         width={52}
         height={52}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { SITE_MEDIA } from '../assets/media';
 import { SITE_INFO } from '../data/aldiaaData';
 import { CloseIcon, SparkleIcon } from './Icons';
 
@@ -41,7 +42,7 @@ export function ProtoBar() {
         <span className="by">
           تصميم وتطوير
           <img
-            src={SITE_INFO.assets.designerMark}
+            src={SITE_MEDIA.designerMark}
             alt="شعار المصمم"
             width={22}
             height={22}

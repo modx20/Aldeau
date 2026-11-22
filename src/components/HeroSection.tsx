@@ -1,3 +1,4 @@
+import { SITE_MEDIA } from '../assets/media';
 import { SITE_INFO } from '../data/aldiaaData';
 import { buildWhatsAppUrl } from '../utils/aldiaa';
 import { ArrowLeftIcon, WhatsAppIcon } from './Icons';
@@ -10,7 +11,7 @@ export function HeroSection() {
     <section className="hero on-dark" id="top" aria-label="مقدمة">
       <div className="hero-media">
         <img
-          src={SITE_INFO.assets.hero}
+          src={SITE_MEDIA.hero}
           alt="مكسرات محمّصة تنسكب من مغرفة خشبية في أوعية من الخيزران"
           fetchPriority="high"
           width={1376}
@@ -85,7 +86,7 @@ export function HeroSection() {
             </textPath>
           </text>
         </svg>
-        <img src={SITE_INFO.assets.logo} alt="" width={84} height={84} />
+        <img src={SITE_MEDIA.logo} alt="" width={84} height={84} />
       </div>
 
       <a href="#about" className="scroll-cue" aria-label="انتقل إلى القسم التالي" />

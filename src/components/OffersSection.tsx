@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { OFFER_MEDIA } from '../assets/media';
 import { OFFER_POSTERS, SITE_INFO } from '../data/aldiaaData';
 import { ArrowLeftIcon, InstagramIcon, SparkleIcon } from './Icons';
 
@@ -57,9 +58,9 @@ export function OffersSection() {
         aria-label="منشورات العروض"
       >
         {OFFER_POSTERS.map((offer) => (
-          <figure key={offer.image}>
+          <figure key={offer.id}>
             <img
-              src={offer.image}
+              src={OFFER_MEDIA[offer.id]}
               alt={offer.alt}
               width={1152}
               height={1440}

@@ -1,3 +1,4 @@
+import { SITE_MEDIA } from '../assets/media';
 import { SITE_INFO } from '../data/aldiaaData';
 import { PinIcon } from './Icons';
 
@@ -47,7 +48,7 @@ export function AboutSection() {
           <div className="frame" aria-hidden="true" />
           <figure className="f1">
             <img
-              src={SITE_INFO.assets.storeFront}
+              src={SITE_MEDIA.storeFront}
               alt="واجهة أحد فروع مطاحن ومحامص الضياء"
               loading="lazy"
               width={596}
@@ -56,7 +57,7 @@ export function AboutSection() {
           </figure>
           <figure className="f2">
             <img
-              src={SITE_INFO.assets.storeFacade}
+              src={SITE_MEDIA.storeFacade}
               alt="لافتة الضياء على واجهة زجاجية لأحد الفروع"
               loading="lazy"
               width={739}

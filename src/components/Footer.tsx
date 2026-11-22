@@ -1,3 +1,4 @@
+import { SITE_MEDIA } from '../assets/media';
 import { NAV_ITEMS, SITE_INFO } from '../data/aldiaaData';
 import { buildWhatsAppUrl } from '../utils/aldiaa';
 import { BrandMark, SocialRow } from './Header';
@@ -61,7 +62,7 @@ export function Footer() {
           <div className="credit">
             <span>صُمّم وطُوّر بواسطة</span>
             <img
-              src={SITE_INFO.assets.designerMark}
+              src={SITE_MEDIA.designerMark}
               alt="شعار المصمم"
               width={46}
               height={46}

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { PRODUCT_MEDIA } from '../assets/media';
 import {
   PRODUCTS,
   PRODUCT_CATEGORIES,
@@ -81,7 +82,7 @@ export function CatalogSection({ selected, onToggle }: CatalogSectionProps) {
                 <div className="media">
                   <span className="cat">{CATEGORY_LABEL_MAP[product.category]}</span>
                   <img
-                    src={product.image}
+                    src={PRODUCT_MEDIA[product.id]}
                     alt={`${product.name} في وعاء خشبي`}
                     loading="lazy"
                     width={1024}

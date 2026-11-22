@@ -15,7 +15,6 @@ export interface ProductItem {
   name: string;
   category: Exclude<ProductCategoryId, 'all'>;
   note: string;
-  image: string;
   feature?: boolean;
 }
 
@@ -35,7 +34,7 @@ export interface CraftStep {
 }
 
 export interface OfferPoster {
-  image: string;
+  id: string;
   alt: string;
 }
 
@@ -61,14 +60,6 @@ export const SITE_INFO = {
     instagram: 'https://www.instagram.com/aldiaaroastery',
     facebook: 'https://www.facebook.com/share/1Ph3trpEfQ/',
     snapchat: 'https://www.snapchat.com/@aldiaaroastery',
-  },
-  assets: {
-    logo: '/img/aldiaa-logo.jpg',
-    designerMark: '/img/designer-mark.svg',
-    hero: '/img/hero-roastery.jpg',
-    storeFront: '/img/store-front.jpg',
-    storeFacade: '/img/store-facade.jpg',
-    craftDrum: '/img/craft-drum.jpg',
   },
 } as const;
 
@@ -106,7 +97,6 @@ export const PRODUCTS: ProductItem[] = [
     name: 'مخلوطة اكسترا',
     category: 'nuts',
     note: 'لوز وفستق وبذور محمّصة في خلطة واحدة متوازنة، تكفي لصحن الضيافة كاملاً.',
-    image: '/img/product-mix.jpg',
     feature: true,
   },
   {
@@ -114,42 +104,36 @@ export const PRODUCTS: ProductItem[] = [
     name: 'بزر أفغاني',
     category: 'nuts',
     note: 'حبّة كبيرة وتحميص متوازن ضمن تشكيلة المكسرات، رفيق السهرات الطويلة.',
-    image: '/img/product-seeds.jpg',
   },
   {
     id: 'flavored-peanuts',
     name: 'فستق مياسي مشكّل',
     category: 'nuts',
     note: 'فستق مغلّف بنكهات وألوان متعددة، يحبّه الصغار قبل الكبار.',
-    image: '/img/product-peanuts.jpg',
   },
   {
     id: 'coarse-bulgur',
     name: 'برغل خشن',
     category: 'grains',
     note: 'حبّة نظيفة ومتماسكة للمجدّرة والكبّة وطبخات البيت.',
-    image: '/img/product-bulgur.jpg',
   },
   {
     id: 'roasted-chips',
     name: 'شيبس محمّص',
     category: 'snacks',
     note: 'رقائق بطاطا مقرمشة جاهزة للأكل مباشرة.',
-    image: '/img/product-chips.jpg',
   },
   {
     id: 'raw-chips',
     name: 'شيبس نيّ (رقائق)',
     category: 'snacks',
     note: 'رقائق للقلي في البيت، لتحضير الشيبس طازجاً متى شئت.',
-    image: '/img/product-rawchips.jpg',
   },
   {
     id: 'popcorn',
     name: 'بوشار',
     category: 'grains',
     note: 'حبوب ذرة مختارة لتحضير البوشار في البيت.',
-    image: '/img/product-popcorn.jpg',
   },
 ];
 
@@ -181,11 +165,11 @@ export const CRAFT_STEPS: CraftStep[] = [
 ];
 
 export const OFFER_POSTERS: OfferPoster[] = [
-  { image: '/img/offer-5.jpg', alt: 'منشور عرض الضياء: مخلوطة اكسترا' },
-  { image: '/img/offer-4.jpg', alt: 'منشور عرض الضياء: بزر أفغاني' },
-  { image: '/img/offer-3.jpg', alt: 'منشور عرض الضياء: فستق مياسي مشكّل' },
-  { image: '/img/offer-2.jpg', alt: 'منشور عرض الضياء: برغل خشن' },
-  { image: '/img/offer-1.jpg', alt: 'منشور عرض الضياء: شيبس وبوشار' },
+  { id: 'offer-5', alt: 'منشور عرض الضياء: مخلوطة اكسترا' },
+  { id: 'offer-4', alt: 'منشور عرض الضياء: بزر أفغاني' },
+  { id: 'offer-3', alt: 'منشور عرض الضياء: فستق مياسي مشكّل' },
+  { id: 'offer-2', alt: 'منشور عرض الضياء: برغل خشن' },
+  { id: 'offer-1', alt: 'منشور عرض الضياء: شيبس وبوشار' },
 ];
 
 export const BRANCHES: BranchItem[] = [

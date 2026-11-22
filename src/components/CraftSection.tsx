@@ -1,4 +1,5 @@
-import { CRAFT_STEPS, SITE_INFO } from '../data/aldiaaData';
+import { SITE_MEDIA } from '../assets/media';
+import { CRAFT_STEPS } from '../data/aldiaaData';
 
 export function CraftSection() {
   return (
@@ -7,7 +8,7 @@ export function CraftSection() {
         <div className="craft-media" data-reveal="true">
           <div className="img-wrap">
             <img
-              src={SITE_INFO.assets.craftDrum}
+              src={SITE_MEDIA.craftDrum}
               alt="لوز وفستق داخل محمصة نحاسية دوّارة"
               loading="lazy"
               width={928}
